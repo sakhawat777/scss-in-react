@@ -1,0 +1,22 @@
+@import '../Variables/Variables.scss';
+@mixin buttonStyle($color, $fontSize) {
+	width: 100px;
+	height: 30px;
+	background-color: $color;
+	border: none;
+	border-radius: 8px;
+	color: $white-color;
+	font-size: $fontSize;
+	margin-left: 10px;
+}
+.mainPage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	h1 {
+		color: $red-color;
+	}
+	button {
+		@include buttonStyle($red-color, 15px);
+	}
+}

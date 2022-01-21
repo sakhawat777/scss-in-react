@@ -1,9 +1,12 @@
 import './App.css';
+import MainPage from './Components/MainPage/MainPage';
+import Navbar from './Components/Navbar/Navbar';
 
 function App() {
 	return (
 		<div>
-			<h1>Hello World</h1>
+			<Navbar></Navbar>
+			<MainPage></MainPage>
 		</div>
 	);
 }
